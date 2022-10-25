@@ -1,8 +1,15 @@
 ---
 title: Visualising Vowel Space Change with GAMMs
-author: Joshua Wilson Black
+author: 
+  - name: "Joshua Wilson Black",
+    url: "joshua.wilsonblack.nz",
+    affiliations:
+      - "New Zealand Institute of Language, Brain and Behaviour, University of Canterbury"
 date: '2022-06-29'
 license: "CC-BY-SA-4.0"
+format:
+    html: default
+    pdf: default
 ---
 
 ## Introduction
