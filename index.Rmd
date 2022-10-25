@@ -1,8 +1,8 @@
 ---
 title: Visualising Vowel Space Change with GAMMs
 author: 
-  - name: "Joshua Wilson Black",
-    url: "joshua.wilsonblack.nz",
+  - name: "Joshua Wilson Black"
+    url: "joshua.wilsonblack.nz"
     affiliations:
       - "New Zealand Institute of Language, Brain and Behaviour, University of Canterbury"
 date: '2022-06-29'
@@ -55,6 +55,9 @@ For the purposes of this post any similar data set would be fine. We need:
 
 Let's load the libraries we will use and have a look at the data.
 ``` {r, message = FALSE}
+# Load renv environment
+renv::use(lockfile = "renv.lock")
+
 # Load tidyverse and friends.
 library(tidyverse)
 library(gganimate)
