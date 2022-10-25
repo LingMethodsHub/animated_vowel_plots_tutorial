@@ -37,3 +37,13 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Rendered documents
+*_files/
+*.html
+*.pdf
+_site/
+.ipynb_checkpoints/
+.quarto/
+.Rproj_user
+*.Rproj
