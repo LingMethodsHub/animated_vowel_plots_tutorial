@@ -569,5 +569,3 @@ As I've noted multiple times above, the details will matter at every step in a
 real research project. Data quality assessment before modelling, sensible model
 structures, evaluation of model quality, and careful consideration of exactly
 what needs to be visualised are all necessary.
-
-This is, however, plenty for a blog post!
