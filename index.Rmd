@@ -5,7 +5,7 @@ author:
     url: "joshua.wilsonblack.nz"
     affiliations:
       - "New Zealand Institute of Language, Brain and Behaviour, University of Canterbury"
-date: '2022-06-29'
+date: '2022-10-27'
 license: "CC-BY-SA-4.0"
 format:
     html: default
@@ -60,8 +60,8 @@ need:
     through recording), and
 -   any variables you wish to control for.
 
-Let's [load the libraries]("renv.lock") we will use and have a look at
-the data.
+Let's [load the libraries](renv.lock){target="_blank"} we will use and
+have a look at the data.
 
 ``` r
 # Load renv environment
