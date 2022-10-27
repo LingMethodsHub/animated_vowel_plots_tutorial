@@ -60,13 +60,21 @@ need:
     through recording), and
 -   any variables you wish to control for.
 
-Let's load the libraries we will use and have a look at the data.
+Let's [load the libraries]("renv.lock") we will use and have a look at
+the data.
+
+``` r
+# Load renv environment
+renv::use(lockfile = "renv.lock")
+```
+
+```{r}
+#| include: false
+renv::use(lockfile = "renv.lock")
+```
 
 ```{r}
 #| message: false
-# Load renv environment
-renv::use(lockfile = "renv.lock")
-
 # Load tidyverse and friends.
 library(tidyverse)
 library(gganimate)
