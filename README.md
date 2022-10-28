@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/558448393.svg)](https://zenodo.org/badge/latestdoi/558448393)
+
 # Visualising Vowel Space Change with GAMMs
 
 This tutorial post is currently hosted at 
