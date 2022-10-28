@@ -407,6 +407,7 @@ female speakers.
 
 ```{r}
 predictions %>%
+  # Filter so only female speakers are plotted.
   filter(
     Gender == "F"
   ) %>%
@@ -417,7 +418,10 @@ predictions %>%
       colour = Vowel
     )
   ) +
-  geom_point()
+  # Add the points
+  geom_point() +
+  # Change the colours for the vowels to match those defined above.
+  scale_colour_manual(values = vowel_colours)
 ```
 
 This is the wrong way around for a vowel plot. So we reverse the *x* and
@@ -437,7 +441,8 @@ predictions %>%
   ) +
   geom_point() +
   scale_x_reverse() +
-  scale_y_reverse()
+  scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours)
 ```
 
 It's also unclear which direction these changes are occurring. We need
@@ -458,7 +463,8 @@ predictions %>%
   ) +
   geom_path(arrow = arrow(length = unit(5, "mm"))) +
   scale_x_reverse() +
-  scale_y_reverse()
+  scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours)
 ```
 
 We can add labels to the start of each arrow and remove the legend. This
@@ -494,7 +500,8 @@ predictions %>%
   ) +
   # Often need to use 'expansion' here to fit in 'THOUGHT'
   scale_x_reverse(expand = expansion(add = 100)) + 
-  scale_y_reverse()
+  scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours)
 ```
 
 We can use the faceting functions to plot both male and female data. We
@@ -521,6 +528,7 @@ predictions %>%
   ) +
   scale_x_reverse(expand = expansion(add = 250)) + 
   scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours) +
   facet_grid(
     cols = vars(Gender)
   )
@@ -552,6 +560,7 @@ predictions %>%
   ) +
   scale_x_reverse(expand = expansion(add = 200)) + # less expanasion needed.
   scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours) +
   facet_grid(
     cols = vars(Gender)
   ) +
@@ -613,6 +622,7 @@ predictions %>%
   ) +
   scale_x_reverse(expand = expansion(add = 200)) + 
   scale_y_reverse() +
+  scale_colour_manual(values = vowel_colours) +
   facet_grid(
     cols = vars(Gender)
   ) +
