@@ -73,10 +73,6 @@ have a look at the data.
 renv::use(lockfile = "renv.lock")
 ```
 
-```{r}
-#| include: false
-renv::use(lockfile = "renv.lock")
-```
 
 ```{r}
 #| message: false
