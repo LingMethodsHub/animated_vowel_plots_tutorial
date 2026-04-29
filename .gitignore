@@ -49,3 +49,4 @@ _site/
 *.Rproj
 /.quarto/
 renv/
+**/*.quarto_ipynb

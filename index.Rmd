@@ -14,11 +14,11 @@ editor:
   markdown: 
     wrap: 72
 bibliography: references.bib
-image: "index_files/figure-html/unnamed-chunk-19-1.gif"
+image: "index_files/figure-html/unnamed-chunk-17-1.gif"
 twitter-card:
-  image: "index_files/figure-html/unnamed-chunk-18-1.png"
+  image: "index_files/figure-html/unnamed-chunk-16-1.png"
 open-graph:
-  image: "index_files/figure-html/unnamed-chunk-18-1.png"
+  image: "index_files/figure-html/unnamed-chunk-16-1.png"
 ---
 
 ## Introduction
@@ -598,7 +598,6 @@ Finally, a call to `theme()` lets us make this caption larger.
 
 ```{r}
 #| message: false
-#| warning: false
 predictions %>%
   ggplot(
     aes(
